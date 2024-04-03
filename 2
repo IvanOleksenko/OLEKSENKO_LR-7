@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Form</title>
+</head>
+<body>
+<h1>Order Form</h1>
+<form action="#" method="post">
+  <label for="bank_account_number">Bank Account Number:</label><br>
+  <input type="text" id="bank_account_number" name="bank_account_number" required><br><br>
+  
+  <label for="personal_user_id">Personal User ID:</label><br>
+  <input type="text" id="personal_user_id" name="personal_user_id" required><br><br>
+  
+  <label for="products">Select Product(s):</label><br>
+  <select id="products" name="products" multiple>
+    <option value="product1">Product 1</option>
+    <option value="product2">Product 2</option>
+    <option value="product3">Product 3</option>
+  </select><br><br>
+  
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+  
+  <label for="payment_method">Payment Method:</label><br>
+  <input type="radio" id="cash" name="payment_method" value="cash">
+  <label for="cash">Cash</label><br>
+  <input type="radio" id="non_cash" name="payment_method" value="non_cash">
+  <label for="non_cash">Non-Cash</label><br><br>
+  
+  <label for="additional_info">Additional Information:</label><br>
+  <input type="checkbox" id="balance" name="additional_info" value="balance">
+  <label for="balance">Account Balance</label><br>
+  <input type="checkbox" id="recent_payments" name="additional_info" value="recent_payments">
+  <label for="recent_payments">Recent Payments List</label><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
